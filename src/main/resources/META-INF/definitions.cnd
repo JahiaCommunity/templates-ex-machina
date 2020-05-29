@@ -1,0 +1,7 @@
+<exmac = 'http://tuto-template-chuault/jahia/exmac'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[exmac:bannerImage] > jnt:content, jmix:siteComponent
+ - image (weakreference, picker[type='image']) mandatory
+
