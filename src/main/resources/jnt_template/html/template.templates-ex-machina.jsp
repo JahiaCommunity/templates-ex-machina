@@ -14,7 +14,7 @@
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 <html>
 <!--
-	Ex Machina by TEMPLATED
+	Source Ex Machina by TEMPLATED
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
