@@ -57,7 +57,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Templates Ex Machina</name>
-  <description>Jeu de templates demo pour la Jahia Commuinity.</description>
+  <description>Jeu de templates demo pour la Jahia Communinity.</description>
   <scm>
     <connection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</connection>
     <developerConnection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</developerConnection>
