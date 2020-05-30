@@ -57,7 +57,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Templates Ex Machina</name>
-  <description>This is the custom profile module (Templates Ex Machina) for running on a Digital Experience Manager server.</description>
+  <description>Jeu de templates demo pour la Jahia Commuiniy.</description>
   <scm>
     <connection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</connection>
     <developerConnection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</developerConnection>
