@@ -11,13 +11,14 @@
          <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                   jcr:primaryType="jnt:moduleVersionFolder"
                   j:staticMountPointProviderKey="module-templates-ex-machina-1.0-SNAPSHOT">
-            <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+            <pom.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
+            <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
                  jcr:primaryType="jnt:folder">
-               <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+               <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
                      jcr:primaryType="jnt:folder">
-                  <import jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                  <import jcr:mixinTypes="jmix:hasExternalProviderExtension"
                           jcr:primaryType="jnt:folder">
-                     <repository.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
+                     <repository.xml jcr:primaryType="jnt:xmlFile"/>
                   </import>
                </main>
             </src>
