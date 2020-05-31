@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+   <modules jcr:primaryType="jnt:modules">
+      <templates-ex-machina j:dependencies="default"
+                            j:installedModules="templates-ex-machina"
+                            j:modulePriority="0"
+                            j:moduleType="templatesSet"
+                            j:title="Templates Ex Machina"
+                            jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                            jcr:primaryType="jnt:module">
+         <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-templates-ex-machina-1.0-SNAPSHOT">
+            <pom.xml jcr:primaryType="jnt:xmlFile"/>
+            <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+               <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                  <import jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                          jcr:primaryType="jnt:folder">
+                     <repository.xml jcr:primaryType="jnt:xmlFile"/>
+                  </import>
+                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                           <template.templates-ex-machina.jsp jcr:primaryType="jnt:templateFile"/>
+                        </html>
+                     </jnt_template>
+                  </resources>
+               </main>
+            </src>
+         </sources>
+         <portlets jcr:primaryType="jnt:portletFolder"/>
+         <files jcr:primaryType="jnt:folder"/>
+         <contents jcr:primaryType="jnt:contentFolder"/>
+         <templates jcr:primaryType="jnt:templatesFolder">
+            <files jcr:primaryType="jnt:folder">
+               <themes jcr:primaryType="jnt:folder">
+                  <default jcr:primaryType="jnt:folder"/>
+               </themes>
+            </files>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <base j:theme="#/modules/templates-ex-machina/templates/files/themes/default"
+                  j:view="templates-ex-machina"
+                  jcr:mixinTypes="jmix:theme"
+                  jcr:primaryType="jnt:template">
+               <pagecontent jcr:primaryType="jnt:contentList">
+                  <header j:id="header"
+                          j:skin="skins.custom"
+                          jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                          jcr:primaryType="jnt:area">
+                     <header j:classname="container"
+                             j:skin="skins.custom"
+                             jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                             jcr:primaryType="jnt:contentList">
+                        <logo-area j:id="logo"
+                                   j:limitedAbsoluteAreaEdit="false"
+                                   j:skin="skins.custom"
+                                   jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                   jcr:primaryType="jnt:absoluteArea"/>
+                        <navigation j:baselineNode="home"
+                                    j:maxDepth="1"
+                                    j:menuItemView="menuElement"
+                                    j:startLevel="0"
+                                    j:view="ex.machina"
+                                    jcr:mixinTypes="jmix:renderable"
+                                    jcr:primaryType="jnt:navMenu">
+                           <j:translation_en jcr:language="en"
+                                             jcr:mixinTypes="mix:title"
+                                             jcr:primaryType="jnt:translation"
+                                             jcr:title="Navigation"/>
+                        </navigation>
+                     </header>
+                  </header>
+                  <banner_area j:id="banner"
+                               j:skin="skins.custom"
+                               jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                               jcr:primaryType="jnt:area">
+                     <banner_area j:classname="container"
+                                  j:skin="skins.custom"
+                                  jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                  jcr:primaryType="jnt:contentList">
+                        <override-banner j:allowedTypes="exmac:bannerImage"
+                                         j:limitedAbsoluteAreaEdit="false"
+                                         j:numberOfItems="1"
+                                         jcr:primaryType="jnt:absoluteArea"/>
+                     </banner_area>
+                  </banner_area>
+               </pagecontent>
+               <homepage jcr:primaryType="jnt:pageTemplate">
+                  <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation"/>
+               </homepage>
+               <no-sidebar jcr:primaryType="jnt:pageTemplate">
+                  <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation"/>
+               </no-sidebar>
+            </base>
+            <content-template j:applyOn="jnt:content"
+                              j:hiddenTemplate="true"
+                              j:priority="1"
+                              j:view="templates-ex-machina"
+                              jcr:primaryType="jnt:contentTemplate">
+               <pagecontent jcr:primaryType="jnt:contentList">
+                  <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+               </pagecontent>
+            </content-template>
+         </templates>
+         <home j:isHomePage="true"
+               j:templateName="homepage"
+               jcr:primaryType="jnt:page">
+            <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Home"/>
+         </home>
+      </templates-ex-machina>
+   </modules>
+</content>
