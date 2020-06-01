@@ -11,7 +11,7 @@
          <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                   jcr:primaryType="jnt:moduleVersionFolder"
                   j:staticMountPointProviderKey="module-templates-ex-machina-1.0-SNAPSHOT">
-            <pom.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
+            <pom.xml jcr:primaryType="jnt:xmlFile"/>
             <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                  jcr:primaryType="jnt:folder">
                <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
@@ -94,42 +94,117 @@
                              j:skin="skins.custom"
                              jcr:mixinTypes="jmix:customSkin jmix:skinnable"
                              jcr:primaryType="jnt:area"/>
+                  <featured j:id="featured"
+                            j:skin="skins.custom"
+                            jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                            jcr:primaryType="jnt:contentList">
+                     <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Featured"/>
+                     <container j:classname="container"
+                                j:skin="skins.custom"
+                                jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                jcr:primaryType="jnt:contentList">
+                        <j:translation_en jcr:language="en"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="Container"/>
+                        <row-area j:allowedTypes=""
+                                  j:classname="row"
+                                  j:limitedAbsoluteAreaEdit="false"
+                                  j:skin="skins.custom"
+                                  jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                  jcr:primaryType="jnt:absoluteArea"/>
+                     </container>
+                  </featured>
+                  <footer j:id="footer"
+                          j:skin="skins.custom"
+                          jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                          jcr:primaryType="jnt:contentList">
+                     <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Footer"/>
+                     <container j:classname="container"
+                                j:skin="skins.custom"
+                                jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                jcr:primaryType="jnt:contentList">
+                        <j:translation_en jcr:language="en"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="Container"/>
+                        <row-area j:allowedTypes=""
+                                  j:classname="row"
+                                  j:limitedAbsoluteAreaEdit="false"
+                                  j:skin="skins.custom"
+                                  jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                  jcr:primaryType="jnt:absoluteArea"/>
+                     </container>
+                  </footer>
                </pagecontent>
                <homepage jcr:primaryType="jnt:pageTemplate">
                   <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation"/>
-                  <main-area j:classname="container"
-                             j:id="marketing"
+                  <main-area jcr:primaryType="jnt:contentList">
+                     <marketing-container j:classname="container"
+                                          j:id="marketing"
+                                          j:skin="skins.custom"
+                                          jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                          jcr:primaryType="jnt:contentList">
+                        <j:translation_en jcr:language="en"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="Marketing Container"/>
+                        <row-marketing j:classname="row"
+                                       j:skin="skins.custom"
+                                       jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                       jcr:primaryType="jnt:contentList">
+                           <j:translation_en jcr:language="en"
+                                             jcr:primaryType="jnt:translation"
+                                             jcr:title="row-marketing"/>
+                           <mkt1 j:allowedTypes=""
+                                 j:classname="3u"
+                                 j:skin="skins.custom"
+                                 jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                 jcr:primaryType="jnt:area"/>
+                           <mkt2 j:allowedTypes=""
+                                 j:classname="3u"
+                                 j:skin="skins.custom"
+                                 jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                 jcr:primaryType="jnt:area"/>
+                           <mkt3 j:allowedTypes=""
+                                 j:classname="3u"
+                                 j:skin="skins.custom"
+                                 jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                 jcr:primaryType="jnt:area"/>
+                           <mkt4 j:allowedTypes=""
+                                 j:classname="3u"
+                                 j:skin="skins.custom"
+                                 jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                 jcr:primaryType="jnt:area"/>
+                        </row-marketing>
+                     </marketing-container>
+                     <home-main-area j:classname="container"
+                                     j:id="main"
+                                     j:skin="skins.custom"
+                                     jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                     jcr:primaryType="jnt:contentList">
+                        <j:translation_en jcr:language="en"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="Home Main Area"/>
+                        <row j:classname="row"
                              j:skin="skins.custom"
                              jcr:mixinTypes="jmix:customSkin jmix:skinnable"
                              jcr:primaryType="jnt:contentList">
-                     <row-marketing j:classname="row"
+                           <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="Row"/>
+                           <left-6u j:allowedTypes=""
+                                    j:classname="6u"
                                     j:skin="skins.custom"
                                     jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                                    jcr:primaryType="jnt:contentList">
-                        <j:translation_en jcr:language="en"
-                                          jcr:primaryType="jnt:translation"
-                                          jcr:title="row-marketing"/>
-                        <mkt1 j:allowedTypes=""
-                              j:classname="3u"
-                              j:skin="skins.custom"
-                              jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                              jcr:primaryType="jnt:area"/>
-                        <mkt2 j:allowedTypes=""
-                              j:classname="3u"
-                              j:skin="skins.custom"
-                              jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                              jcr:primaryType="jnt:area"/>
-                        <mkt3 j:allowedTypes=""
-                              j:classname="3u"
-                              j:skin="skins.custom"
-                              jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                              jcr:primaryType="jnt:area"/>
-                        <mkt4 j:allowedTypes=""
-                              j:classname="3u"
-                              j:skin="skins.custom"
-                              jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                              jcr:primaryType="jnt:area"/>
-                     </row-marketing>
+                                    jcr:primaryType="jnt:area"/>
+                           <center-3u j:allowedTypes=""
+                                      j:classname="3u"
+                                      j:skin="skins.custom"
+                                      jcr:mixinTypes="jmix:customSkin jmix:skinnable"
+                                      jcr:primaryType="jnt:area"/>
+                           <right-3u j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                        </row>
+                     </home-main-area>
                   </main-area>
                </homepage>
                <no-sidebar jcr:primaryType="jnt:pageTemplate">
