@@ -11,22 +11,22 @@
          <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                   jcr:primaryType="jnt:moduleVersionFolder"
                   j:staticMountPointProviderKey="module-templates-ex-machina-1.0-SNAPSHOT">
-            <pom.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
+            <pom.xml jcr:primaryType="jnt:xmlFile"/>
             <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                  jcr:primaryType="jnt:folder">
                <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                      jcr:primaryType="jnt:folder">
                   <import jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                           jcr:primaryType="jnt:folder">
-                     <repository.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
+                     <repository.xml jcr:primaryType="jnt:xmlFile"/>
                   </import>
                   <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                              jcr:primaryType="jnt:folder">
-                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
                                    jcr:primaryType="jnt:nodeTypeFolder">
-                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
                               jcr:primaryType="jnt:templateTypeFolder">
-                           <template.templates-ex-machina.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:templateFile"/>
+                           <template.templates-ex-machina.jsp jcr:primaryType="jnt:templateFile"/>
                         </html>
                      </jnt_template>
                   </resources>
