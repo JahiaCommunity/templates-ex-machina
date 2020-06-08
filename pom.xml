@@ -57,11 +57,14 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Templates Ex Machina</name>
-  <description>Tepmlate de dÃ©mo de la CommunautÃ© Jahia.</description>
+  <description>Tepmlate de dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©mo de la CommunautÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© Jahia.</description>
   <scm>
     <connection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</connection>
     <developerConnection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</developerConnection>
   </scm>
+  <properties>
+    <jahia-depends>default,skins</jahia-depends>
+  </properties>
   <repositories>
     <repository>
       <releases>
@@ -85,7 +88,6 @@
         <configuration>
           <instructions>
             <Jahia-Module-Type>templatesSet</Jahia-Module-Type>
-            <Jahia-Depends>default</Jahia-Depends>
           </instructions>
         </configuration>
       </plugin>

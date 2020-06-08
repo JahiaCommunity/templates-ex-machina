@@ -5,3 +5,7 @@
 [exmac:bannerImage] > jnt:content, jmix:siteComponent
  - image (weakreference, picker[type='image']) mandatory
 
+[exmac:elementSkin] > jmix:customSkin mixin
+ extends = jmix:droppableContent
+ itemtype = layout
+ - elementType(string,choicelist) = div < div,section,article
