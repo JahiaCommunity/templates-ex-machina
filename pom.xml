@@ -57,7 +57,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Templates Ex Machina</name>
-  <description>Tepmlate de dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©mo de la CommunautÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© Jahia.</description>
+  <description>Demo Template of Jahia Community.</description>
   <scm>
     <connection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</connection>
     <developerConnection>scm:git:https://github.com/JahiaCommunity/templates-ex-machina.git</developerConnection>
