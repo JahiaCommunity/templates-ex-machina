@@ -1,0 +1,17 @@
+a
+{
+	color: #25297a !important;
+}
+
+.button
+{
+	background: #25297a !important; 
+	color: #fff !important;
+}
+
+#nav li.active a
+{
+	background: #25297a !important;
+	color: #fff !important;
+}
+
