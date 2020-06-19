@@ -1,0 +1,18 @@
+a
+{
+	color: #25297a;
+}
+.button
+{
+	background: #25297a; 
+}
+.button:hover
+{
+	background: #000; 
+}
+
+#nav li.active a
+{
+	background: #25297a;
+}
+

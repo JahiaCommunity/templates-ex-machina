@@ -32,12 +32,16 @@
       	<template:addResources type="javascript" resources="skel.min.js" />
       	<template:addResources type="javascript" resources="skel-panels.min.js" />
       	<template:addResources type="javascript" resources="init.js" />
+     	<template:addResources type="javascript" resources="moveTheme.js"/>		 
+      
       
       	<noscript>          
           	<template:addResources type="css" resources="skel-noscript.css" targetTag="noscrpit" />
           	<template:addResources type="css" resources="style.css" targetTag="noscrpit" />
           	<template:addResources type="css" resources="style-desktop.css" targetTag="noscrpit" />
 		</noscript>
+		
+		<template:theme/>
 		
       	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
