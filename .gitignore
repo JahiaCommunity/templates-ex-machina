@@ -6,3 +6,4 @@
 /.classpath
 .idea
 *.iml
+/src/main/import/repository.xml.generated

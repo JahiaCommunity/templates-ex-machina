@@ -50,11 +50,11 @@
   <parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>jahia-modules</artifactId>
-    <version>7.3.4.1</version>
+    <version>8.0.1.0</version>
   </parent>
-  <groupId>org.jahia.modules</groupId>
+  <groupId>org.huault.jahia.modules</groupId>
   <artifactId>templates-ex-machina</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.8.1</version>
   <packaging>bundle</packaging>
   <name>Templates Ex Machina</name>
   <description>Demo Template of Jahia Community.</description>

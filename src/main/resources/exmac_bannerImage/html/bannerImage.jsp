@@ -22,7 +22,7 @@
 <c:set var="node" value="${image.node}"/>
 
 <c:if test='${renderContext.editMode}'>
-  EDIT image : ${node.path}
+  EDIT DEBUG image : ${node.path}
   <c:if test="${empty node}">
       <c:if test="${not empty image}">
           <jahia:addCacheDependency path="${image.string}" />
@@ -30,16 +30,14 @@
   </c:if>
 </c:if>
 
-<c:if test="${not empty node}">
+<c:if test="${not empty node.url}">
   	<c:url var="url" value="${node.url}" context="/"/>
-	<template:addResources type="text/css" >
-		<style>
-			#banner {
-            	background: url('${url}') no-repeat center;
-            	background-size: cover;
-			}
-     	</style>
-	</template:addResources>
+	<style>
+		#banner {
+           	background: url('${url}') no-repeat center;
+           	background-size: cover;
+		}
+    	</style>
 </c:if>
 
 
