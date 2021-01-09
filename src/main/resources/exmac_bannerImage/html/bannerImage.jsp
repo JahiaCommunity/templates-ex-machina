@@ -22,7 +22,7 @@
 <c:set var="node" value="${image.node}"/>
 
 <c:if test='${renderContext.editMode}'>
-  EDIT DEBUG image : ${node.path}
+  EDIT image : ${node.path}
   <c:if test="${empty node}">
       <c:if test="${not empty image}">
           <jahia:addCacheDependency path="${image.string}" />
