@@ -8,31 +8,6 @@
                             j:title="Templates Ex Machina"
                             jcr:mixinTypes="jmix:hasExternalProviderExtension"
                             jcr:primaryType="jnt:module">
-         <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                  jcr:primaryType="jnt:moduleVersionFolder"
-                  j:staticMountPointProviderKey="module-templates-ex-machina-1.0-SNAPSHOT">
-            <pom.xml jcr:primaryType="jnt:xmlFile"/>
-            <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                 jcr:primaryType="jnt:folder">
-               <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                     jcr:primaryType="jnt:folder">
-                  <import jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                          jcr:primaryType="jnt:folder">
-                     <repository.xml jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:xmlFile"/>
-                  </import>
-                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                             jcr:primaryType="jnt:folder">
-                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                                   jcr:primaryType="jnt:nodeTypeFolder">
-                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                              jcr:primaryType="jnt:templateTypeFolder">
-                           <template.templates-ex-machina.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:templateFile"/>
-                        </html>
-                     </jnt_template>
-                  </resources>
-               </main>
-            </src>
-         </sources>
          <portlets jcr:primaryType="jnt:portletFolder"/>
          <files jcr:primaryType="jnt:folder"/>
          <contents jcr:primaryType="jnt:contentFolder"/>
@@ -73,7 +48,7 @@
                                    jcr:primaryType="jnt:absoluteArea"/>
                         <navigation j:baselineNode="home"
                                     j:maxDepth="1"
-                                    j:menuItemView="menuElement"
+                                    j:menuItemView="rollover-menu"
                                     j:startLevel="0"
                                     j:view="ex.machina"
                                     jcr:mixinTypes="jmix:renderable"
@@ -85,6 +60,13 @@
                         </navigation>
                      </header>
                   </header>
+                  <rollover elementType="div"
+                            j:allowedTypes="exmac:rolloverMenu"
+                            j:classname="rollover"
+                            j:id="rolloverid"
+                            j:skin="skins.elementCustom"
+                            jcr:mixinTypes="exmac:elementSkin jmix:skinnable"
+                            jcr:primaryType="jnt:area"/>
                   <banner_area j:id="banner"
                                j:skin="skins.custom"
                                jcr:mixinTypes="jmix:customSkin jmix:skinnable"
